@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/images/bg-pattern-desktop.svg");
+    background: linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%);
+    background-repeat: no-repeat;
+}
+/* ! Main */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "hero-image accordion";
+    background-color: white;
+    border-radius: 25px;
+    margin: 5rem 15rem;
+    height: 500px;
+}
+/* ! Hero Image */
+.hero-image-container {
+    grid-area: hero-image;
+    position: relative;
+}
+.hero-image-container img {
+    position: absolute;
+}
+.no-overflow {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#pattern {
+    left: -575px;
+    top: -300px;
+    z-index: 1;
+}
+#pattern-2 {
+    display: none;
+}
+#box {
+    left: -100px;
+    top: 220px; 
+    z-index: 3;
+}
+#woman {
+    left: -80px;
+    top: 80px; 
+    z-index: 2;
+}
+#woman-2 {
+    display: none;
+}
+/* ! Accordion */ 
+.accordion-container {
+    grid-area: accordion;
+    list-style: none;
+    width: 80%;
+    padding: 3rem 5rem 5rem 0rem;   
+}
+.title {
+    margin-bottom: 1rem;
+}
+li {
+    padding: 1rem 0rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+input[type="radio"] {
+    display: none;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(237, 12%, 33%);
+}
+label:hover {
+    color: hsl(14, 88%, 65%);
+}
+#arrow-down {
+    width: 15px;
+    height: 10px;
+}
+.content {
+    font-size: 13px;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 10px 0;
+}
+input[type="radio"]:checked + label {
+    font-weight: 700;
+}
+input[type="radio"]:checked + label > #arrow-down {
+    transform: rotate(0.5turn);
+}
+/* ! Media Queries */
+/* Laptop Screen Size */
+@media screen and (max-width: 1025px) {
+    /* ! Main */
+    main {
+        margin: 5rem 5rem;
+    }
+}
+/* Tablet Screen Size */
+@media screen and (max-width: 769px) {
+    main {
+        height: 80vh;
+    }
+    /* ! Hero Image */
+    .hero-image-container {
+        grid-area: hero-image;
+        position: relative;
+    }
+    .hero-image-container img {
+        position: absolute;
+    }
+    .no-overflow {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #pattern {
+        left: -675px;
+        top: -320px;
+        z-index: 1;
+    }
+    #pattern-2 {
+        display: none;
+    }
+    #box {
+        left: -90px;
+        top: 225px; 
+        z-index: 3;
+        width: 150px;
+    }
+    #woman {
+        left: -60px;
+        top: 120px; 
+        z-index: 2;
+        width: 350px;
+    }
+    #woman-2 {
+        display: none;
+    }
+    /* ! Accordion */ 
+    .accordion-container {
+        padding: 3rem 5rem 5rem 2rem;   
+    }
+    .title {
+        margin-bottom: 0.5rem;
+    }
+    label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        font-weight: 400;
+        color: hsl(237, 12%, 33%);
+    }
+    #arrow-down {
+        width: 15px;
+        height: 10px;
+    }
+    .content {
+        font-size: 13px;
+        font-weight: 400;
+        color: hsl(240, 6%, 50%);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+    }
+}
+/* Mobile L Screen Size */
+@media screen and (max-width: 426px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: 
+        "hero-image"
+        "accordion";
+        margin: 7rem 2rem 1rem 2rem;
+    }
+    #pattern {
+        display: none
+    }
+    #pattern-2 {
+        display: block;
+        left: 55px;
+    }
+    #box {
+        display: none;
+    }
+    #woman {
+        display: none;
+    }
+    #woman-2 {
+        display: block;
+        top: -115px;
+        left: 50px;
+        width: 250px;
+    }
+    /* ! Accordion */ 
+    .title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .accordion-container {
+        padding: 0rem 0rem 5rem 2.3rem;   
+    }
+}
+/* Mobile M Screen Size */
+@media screen and (max-width: 376px) {
+    #pattern-2 {
+        display: block;
+        left: 35px;
+    }
+    #woman-2 {
+        display: block;
+        top: -115px;
+        left: 30px;
+        width: 250px;
+    }
+}
+/* Mobile M Screen Size */
+@media screen and (max-width: 321px) {
+    main {
+        margin: 7rem 1rem 1rem 1rem;
+    }
+    #pattern-2 {
+        left: 45px;
+        top: -5px;
+        width: 200px;
+    }
+    #woman-2 {
+        top: -95px;
+        left: 40px;
+        width: 200px;
+    }
+    /* ! Accordion */ 
+    .title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .accordion-container {
+        padding: 0rem 0rem 5rem 1.9rem;   
+    }
+    label {
+        font-size: 12px;
+    }
+    .content {
+        font-size: 12px;
+    }
+    #arrow-down {
+        width: 12px;
+        height: 8px;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+}
