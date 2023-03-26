@@ -103,5 +103,5 @@ I feel that the `.hero-image-container` could have been coded better. If you hav
 
 ## Author
 
-- Website - [Justin vera](https://www.justinvera.com)
+- Website - [Justin Vera](https://www.justinvera.com)
 - Frontend Mentor - [@justinnvera](https://www.frontendmentor.io/profile/justinnvera)
