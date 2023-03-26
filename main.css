@@ -48,7 +48,7 @@ main {
 #pattern-2 {
     display: none;
 }
-#box {
+.box {
     left: -100px;
     top: 220px; 
     z-index: 3;
@@ -204,7 +204,7 @@ input[type="radio"]:checked + label > #arrow-down {
         display: block;
         left: 55px;
     }
-    #box {
+    .box {
         display: none;
     }
     #woman {
