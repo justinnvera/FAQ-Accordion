@@ -145,7 +145,7 @@ input[type="radio"]:checked + label > #arrow-down {
     #pattern-2 {
         display: none;
     }
-    #box {
+    .box {
         left: -90px;
         top: 225px; 
         z-index: 3;
