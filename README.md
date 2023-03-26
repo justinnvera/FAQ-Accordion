@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/solutions/new)
-- Live Site URL: [Vercel](https://faq-accordion-phi-five.vercel.app)
+- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Live Site URL: [Vercel](https://your-live-site-url.com)
 
 ## My process
 
@@ -103,5 +103,5 @@ I feel that the `.hero-image-container` could have been coded better. If you hav
 
 ## Author
 
-- Website - [Justin Vera](https://www.justinvera.com)
+- Website - [Justin vera](https://www.justinvera.com)
 - Frontend Mentor - [@justinnvera](https://www.frontendmentor.io/profile/justinnvera)
