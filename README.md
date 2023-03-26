@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/solutions/new)
 - Live Site URL: [Vercel](https://faq-accordion-phi-five.vercel.app)
 
 ## My process
